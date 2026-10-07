@@ -8,6 +8,8 @@ public class AuthService
 {
     public const string MensajeExito = "Autenticación exitosa";
 
+    private const string DominioInstitucional = "@novatech.pe";
+
     private static readonly Regex FormatoCorreo = new(
         @"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$",
         RegexOptions.Compiled);
@@ -37,6 +39,11 @@ public class AuthService
         if (!FormatoCorreo.IsMatch(correo))
         {
             return "El correo electrónico debe tener el formato institucional: usuario@novatech.pe.";
+        }
+
+        if (!correo.EndsWith(DominioInstitucional, StringComparison.OrdinalIgnoreCase))
+        {
+            return "El correo debe pertenecer al dominio institucional @novatech.pe.";
         }
 
         var colaborador = await _colaboradorRepository.ValidarCredencialesAsync(correo, clave);
