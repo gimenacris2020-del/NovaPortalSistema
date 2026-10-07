@@ -1,0 +1,23 @@
+# Dependencias (frontend)
+node_modules/
+frontend/node_modules/
+
+# Compilados .NET
+bin/
+obj/
+
+# Compilados frontend
+dist/
+frontend/dist/
+
+# Documentos excluidos de la entrega
+CASO PRÁCTICO.pdf
+*.pdf
+INFORME.md
+REQUERIMIENTOS.md
+
+# IDE / entorno
+.vs/
+*.user
+*.suo
+*.log

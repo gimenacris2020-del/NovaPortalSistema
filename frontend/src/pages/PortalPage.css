@@ -1,0 +1,142 @@
+.portal-contenedor {
+  min-height: 100vh;
+  background: #f4f7fb;
+}
+
+.portal-barra {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding: 16px 28px;
+  background: #ffffff;
+  border-bottom: 1px solid #d7dee8;
+}
+
+.portal-marca {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.portal-icono {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  color: #1d4ed8;
+  background: #e8efff;
+  border-radius: 50%;
+}
+
+.portal-marca-titulo {
+  font-size: 17px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.portal-marca-sub {
+  font-size: 12px;
+  color: #64748b;
+}
+
+.portal-usuario {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.portal-correo {
+  font-size: 14px;
+  color: #334155;
+}
+
+.portal-boton-salir {
+  padding: 9px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #1d4ed8;
+  background: #e8efff;
+  border: 1px solid #c3d3f7;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.portal-boton-salir:hover {
+  background: #d7e3ff;
+}
+
+.portal-boton-salir:focus-visible {
+  outline: 3px solid rgba(29, 78, 216, 0.4);
+  outline-offset: 2px;
+}
+
+.portal-contenido {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 32px 28px;
+}
+
+.portal-bienvenida {
+  padding: 22px 24px;
+  background: #dcfce7;
+  border: 1px solid #86efac;
+  border-radius: 12px;
+  margin-bottom: 28px;
+}
+
+.portal-titulo {
+  margin: 0;
+  font-size: 20px;
+  color: #166534;
+}
+
+.portal-texto {
+  margin: 6px 0 0;
+  font-size: 15px;
+  color: #14532d;
+}
+
+.portal-modulos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 18px;
+}
+
+.portal-modulo {
+  padding: 20px;
+  background: #ffffff;
+  border: 1px solid #d7dee8;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(15, 23, 42, 0.06);
+}
+
+.portal-modulo-titulo {
+  margin: 0 0 8px;
+  font-size: 16px;
+  color: #0f172a;
+}
+
+.portal-modulo-texto {
+  margin: 0;
+  font-size: 14px;
+  color: #5b6675;
+}
+
+@media (max-width: 640px) {
+  .portal-barra {
+    padding: 14px 18px;
+  }
+
+  .portal-contenido {
+    padding: 22px 18px;
+  }
+
+  .portal-usuario {
+    width: 100%;
+    justify-content: space-between;
+  }
+}

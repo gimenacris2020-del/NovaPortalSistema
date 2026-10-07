@@ -1,0 +1,6 @@
+@NovaPortalSistema.API_HostAddress = http://localhost:5012
+
+GET {{NovaPortalSistema.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
